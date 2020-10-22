@@ -6,6 +6,7 @@
 
 #include <math.h>
 #include "anomaly_detection_util.h"
+#include <stdlib.h>
 
 float avg(float* x, int size){
 	float sum = 0;
@@ -89,7 +90,7 @@ float dev(Point p,Line l){
 	//find y to calculate devation
 	float y = l.f(p.x);
 	// calculate deation
-	return (float) abs(p.y - y);
+	return abs(p.y - y);
 }
 
 
