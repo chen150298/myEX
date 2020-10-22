@@ -89,7 +89,7 @@ float dev(Point p,Line l){
 	//find y to calculate devation
 	float y = l.f(p.x);
 	// calculate deation
-	return abs(p.y - y);
+	return (float) abs(p.y - y);
 }
 
 
